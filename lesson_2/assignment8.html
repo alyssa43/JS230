@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Test Page</title>
+    <meta charset="UTF-8" />
+    <script>
+      function highlightThis(e) {
+        console.log(`${this.className} ${e.currentTarget.tagName}`);
+      }
+
+      document.addEventListener('DOMContentLoaded', event => {
+        const divs = document.querySelectorAll('.pick');
+
+        for (const div of divs) {
+          div.addEventListener('click', highlightThis, true);
+        }
+
+        document.querySelector('.d3').addEventListener('click', highlightThis, false);
+      });
+
+    </script>
+    <style>
+      .d1 {
+        background-color: green;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .d2 {
+        background-color: blue;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 150px;
+        height: 150px;
+      }
+
+      .d3 {
+        background-color: red;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 100px;
+        height: 100px;
+        line-height: 25px;
+      }
+
+      .d4 {
+        background-color: yellow;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1 pick">1
+      <main class="d2 pick">2
+        <div class="d3">3
+          <section class="d4 pick">4
+          </section>
+        </div>  
+      </main>
+    </div>
+  </body>
+</html>
