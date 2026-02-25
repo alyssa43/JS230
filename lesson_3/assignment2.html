@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Data Attributes</title>
+    <style>
+      article {
+        display: none;
+      }
+
+      article[data-block="gold"] {
+        display: block;
+      }
+    </style>
+    <script src="./assignment2.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" data-block="gold">Gold Sponsors</a></li>
+      <li><a href="#" data-block="silver">Silver Sponsors</a></li>
+      <li><a href="#" data-block="bronze">Bronze Sponsors</a></li>
+    </ul>
+
+    <article data-block="gold">
+      <h1>Gold Sponsors</h1>
+    </article>
+
+    <article data-block="silver">
+      <h1>Silver Sponsors</h1>
+    </article>
+
+    <article data-block="bronze">
+      <h1>Bronze Sponsors</h1>
+    </article>
+  </body>
+</html>
