@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exotic Animals</title>
+    <style>
+      body {
+        background: #335;
+      }
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+      }
+
+      #exotic_animals {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      figure {
+        border: 5px solid #fff;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .hover-figure {
+        position: relative;
+      }
+
+      .hover-figure figcaption {
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity 0.3s;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        width: 100%;
+        padding: 10px;
+      }
+
+      .hover-figure figcaption.show {
+        opacity: 1;
+      }
+    </style>
+    <script src="./2.js"></script>
+  </head>
+  <body>
+    <h1>Exotic Animals</h1>
+    <div id="exotic_animals">
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/quetzal.jpg" alt="A brightly colored bird with a long tail flies through the forest.">
+        <figcaption>
+          Quetzal are found in forests and woodlands, especially in humid highlands, with the five species from the genus Pharomachrus being exclusively Neotropical, while the single Euptilotis species is found in Mexico and very locally in southern United States.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/blackbuck.jpg" alt="A brown and white antelope with long spiral horns stands in grass.">
+        <figcaption>
+          The blackbuck,  also known as the Indian antelope, is an antelope found in Pakistan, India and Nepal. The blackbuck is the sole extant member of the genus Antilope. The species was described and given its binomial name by Swedish zoologist Carl Linnaeus in 1758.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/golden_pheasant.jpg" alt="A brightly colored yellow, red, and blue bird with intricate feather patterns.">
+        <figcaption>
+          The golden pheasant or Chinese pheasant (Chrysolophus pictus) is a gamebird of the order Galliformes (gallinaceous birds) and the family Phasianidae (pheasants). It is native to forests in mountainous areas of western China.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/greater_bird_of_paradise.jpg" alt="An exotic bird with deep burgundy and yellow feathers stands on a concrete wall.">
+        <figcaption>
+          The greater bird-of-paradise (Paradisaea apoda) is a bird-of-paradise in the genus Paradisaea. The greater bird-of-paradise is the largest member in the genus Paradisaea, with males measuring up to 43 cm (17 in) (excluding the long twin tail wires). The female is smaller, at only 35 cm (14 in).
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/rainbow_lorikeet.jpg" alt="A bright blue and orange bird flaps its wings perched on a branch.">
+        <figcaption>
+          The rainbow lorikeet (Trichoglossus moluccanus) is a species of parrot found in Australia. It is common along the eastern seaboard, from northern Queensland to South Australia and Tasmania. Its habitat is rainforest, coastal bush and woodland areas.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/vampire_squid.jpg" alt="A peach colored squid with blue eyes drifts through the water.">
+        <figcaption>
+          The vampire squid is a small, deep-sea cephalopod found throughout the temperate and tropical oceans of the world. Unique retractile sensory filaments justify the vampire squid's placement in its own order: Vampyromorphida.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/genet.jpg" alt="A light colored cat with a sleek face and dark spots sits watching attentively.">
+        <figcaption>
+          A genet is a member of the genus Genetta, which consists of 14 to 17 species of small African carnivorans. Genet fossils from the Pliocene have been found in Morocco. The common genet is the only genet present in Europe and occurs in the Iberian Peninsula and France.
+        </figcaption>
+      </figure>
+      <figure class="hover-figure">
+        <img src="https://d1nrfq3cstnmkv.cloudfront.net/exercises/gui_apps/exotic_animals/images/lined_butterflyfish.jpg" alt="A wide patterned, yellow, blue and black fish swims near coral.">
+        <figcaption>
+          The lined butterflyfish is a butterflyfish (family Chaetodontidae), one of the largest species in the genus Chaetodon. They have a wide range from the Red Sea to South Africa and as far east as southern Japan and Hawaii.
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
