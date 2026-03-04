@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f7;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50; /* Sleeker dark blue/grey */
+  color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0 0 1.5rem 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+select {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.filter_btn {
+  background-color: #e67e22; /* High contrast orange */
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.filter_btn:hover {
+  background-color: #d35400;
+  transform: translateY(-1px);
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Updated selector to match your JS class "car" */
+.car {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.car:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.car figure {
+  margin: 0;
+  height: 180px;
+  background: #eee;
+}
+
+.car img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps images from stretching */
+}
+
+.car h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #2c3e50;
+}
+
+.car p {
+  margin: 0 15px 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.car .price {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1.1rem;
+}
+
+.car a {
+  display: block;
+  text-align: center;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin-top: auto; /* Pushes button to bottom */
+  font-weight: 600;
+}
+
+.car a:hover {
+  background: #2980b9;
+}
+
+.no-results {
+  grid-column: 1 / -1; /* Spans across all grid columns */
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 2px dashed #ccc;
+  color: #666;
+}
+
+.no-results::before {
+  content: "🔍"; /* Adds a magnifying glass icon */
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.no-results p {
+  font-size: 1.2rem;
+  margin: 0;
+}
